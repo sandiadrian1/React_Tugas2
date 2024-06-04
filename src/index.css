@@ -1,0 +1,56 @@
+body{
+    background-color: cadetblue;
+}
+
+.header {
+     display: flex;
+     justify-content:space-around;
+     align-items: center;
+     background-color: palevioletred;
+}
+
+.Box{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-top: 10%;
+     gap: 20px;
+     flex-wrap: wrap;
+}
+
+/* .Card-Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes h2{
+    0% {left:0;}
+    50% { left: calc(100%-75px);}
+    100%{left : 0 ;}
+}
+.Button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+img {
+    width: 300px;
+    height: 500px;
+}
+
+button:hover{
+    width: 20%;
+    color : red;
+    background-color: black;
+}
+button{
+       color: black;
+       background-color: wheat;
+}
