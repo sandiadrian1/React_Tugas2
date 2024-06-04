@@ -1,5 +1,6 @@
 body{
     background-color: cadetblue;
+
 }
 
 .header {
@@ -7,6 +8,7 @@ body{
      justify-content:space-around;
      align-items: center;
      background-color: palevioletred;
+     position:sticky;
 }
 
 .Box{
@@ -26,9 +28,14 @@ body{
 h2 {
     display: flex;
     justify-content: center;
+    background: linear-gradient(50deg, wheat ,rgb(1, 23, 41),#400,white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: leftright;
 }
 
-@keyframes h2{
+@keyframes leftright{
     0% {left:0;}
     50% { left: calc(100%-75px);}
     100%{left : 0 ;}
@@ -38,11 +45,24 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  transform: translateY(2px);
+  
 }
 
 img {
     width: 300px;
     height: 500px;
+    filter: grayscale(100%);
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+}
+img:hover{
+    width: 300px;
+    height: 500px;
+    filter: grayscale(1%);
+    width: 330px;
+    /* transform: rotateY(60deg);
+    transition: all ease-in-out 0.4s; */
 }
 
 button:hover{
